@@ -32,4 +32,8 @@ public:
         // Step 2: Assign value
         newNode->noMhs = nim;
 
-        
+        // Step 3: Insert at beginning if empty or smallest
+        if (START == NULL || nim <= START->noMhs)
+        {
+            if (START != NULL && nim == START->noMhs)
+            
