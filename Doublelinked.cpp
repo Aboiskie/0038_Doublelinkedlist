@@ -55,4 +55,12 @@ public:
             return;
         }
 
+        // Insert in between node
+        // Step 8: locate position for insert
+        Node *current = START;
+        while (current->next != NULL && current->next->noMhs < nim)
+        {
+            current = current->next;
+        }
+
         
